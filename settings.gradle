@@ -10,6 +10,15 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+//        maven {
+        // 这个不是https,如果不是https的话，需要在他们的maven 仓库的settings.xml配置allowInsecureProtocol
+//            url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/'
+//            name 'kakao'
+//        }
+        maven {
+            url 'https://s3.ap-northeast-2.amazonaws.com/kakao-sdk-release/release/'
+            name 'Kakaogames'
+        }
     }
 }
 
