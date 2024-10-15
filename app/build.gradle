@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.pico.testbuildueapk'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.pico.testbuildueapk"
